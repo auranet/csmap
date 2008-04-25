@@ -1,0 +1,31 @@
+#
+# Each line points to a datum shift data file.  In the case of
+# overlapping coverage, the program selects the data file with
+# the smallest grid cell in the region of the conversion.  If
+# the grid cell sizes are the same, the program selects the
+# file which appears first in this file.  Check the Help file
+# for more options.
+#
+# Order the list of files as appropriate for your application.
+# You can add additional files as they become available.  While
+# the name, letter case, and location of the file name is not
+# importantant, the extension must be ".gsb" if the file is in
+# the Canadian National Transformation, Version 2 format.  Each
+# line may be a full path name.  The ".\" sequence used here is
+# a relative folder/directory reference, relative to the folder
+# (directory) in which this file resides.
+#
+.\Australia\AGD66\A66National(13.09.01).gsb
+#.\Australia\AGD66\SEAust_210600.gsb
+#\Australia\AGD66\nt_0599.gsb
+#.\Australia\AGD66\TAS_1098.gsb
+#
+# The fallback datum definition is used when none of the above
+# listed files provides coverage for the point to be converted.
+# The specification given below (in the distribution data anyway),
+# says to use the ASTRLA66 definition in this case.  This
+# definition is a US DMA Multiple Regression formula for AGD66.
+# Of course, you can change this to whatever datum definition
+# you prefer.
+#
+Fallback=ASTRLA66

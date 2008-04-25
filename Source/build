@@ -1,0 +1,23 @@
+#!/bin/sh
+
+case $ARCHITECTURE in
+	APPLE )
+		CS_CC_FLG="-I../Include -O2 -no-cpp-precomp -fno-common -D$ARCHITECTURE -DNDEBUG"
+		CS_CPP_FLG="-I../Include -O2 -no-cpp-precomp -fno-common -D$ARCHITECTURE -DNDEBUG -D__CPP__"
+		CS_EXE_FLG="-dynamic -L/usr/lib/gcc/i686-apple-darwin9/4.0.1"
+		CS_LIB_PATH="/usr/local/lib"
+		CS_LIB_SUFFIX="dylib"
+		CS_LIB_FLG="-dynamiclib -flat_namespace -undefined suppress"
+		CS_NAMES="-install_name /usr/local/lib/libcsmap.1.$CS_LIB_SUFFIX -compatibility_version 1.15 -current_version 1.15.1" ;;
+	* )
+		CS_CC_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC"
+		CS_CPP_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC -D__CPP__"
+		CS_EXE_FLG=""
+		CS_LIB_PATH="/usr/lib"
+		CS_LIB_SUFFIX="so"
+		CS_LIB_FLG="-shared"
+		CS_NAMES="" ;;
+esac
+
+export CS_CC_FLG CS_CPP_FLG CS_EXE_FLG CS_LIB_PATH CS_LIB_SUFFIX CS_LIB_FLG CS_NAMES
+make

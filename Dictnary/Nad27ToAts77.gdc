@@ -1,0 +1,48 @@
+# Lines, like this one, which begin with the pound
+# sign are comment lines.
+#
+# The following lists the ATS77 TRANSFORM data files
+# available on this system.  Since these files require
+# a license from the provinces to use them, we can't
+# distribute them.  THerefore, we list the files which
+# are supported, but comment them out so there are no
+# problems in system operation.
+#
+# If you desire to use these data files:
+#
+# 1> Obtain a license to use the file(s)
+# 2> Obtain the file(s) and install on your system.
+# 3> Uncomment out the line in this file which
+#    references this file.
+# 4> Modify the line of text which references the
+#    file so that it points to the actual location
+#    of the file.
+#
+# Typically there are 6 files, two for each of three
+# province, a file for each direction.  The software
+# is smart enough to extract the direction and the
+# geographic region of coverage from the files, and
+# use the appropriate file.
+#
+# In the case of overlapping coverage, the program
+# use the first file encountered which covers the
+# point to be converted.  Thus, you may wish to
+# reorder the files listed below.
+#.\Canada\TRNB7727.dat
+#.\Canada\TRNB2777.dat
+#.\Canada\TRNS7727.dat
+#.\Canada\TRNS2777.dat
+#.\Canada\TRPE7727.dat
+#.\Canada\TRPE2777.dat
+#
+# Fallback is an ordinary datum definition (i.e.
+# a datum defined in the datum dictionary) which
+# is to be used when the coverage provided by the
+# above files is insufficient.  Use this feature
+# to indicate what definition is to be used, for
+# example, to convert offshore points.  Typically,
+# fallback datums are Seven Parameter transformations
+# which are fairly good approximations of the
+# original datum.
+#
+#Fallback=????

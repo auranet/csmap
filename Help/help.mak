@@ -1,0 +1,4 @@
+ALL: CS-MAP.hlp
+
+CS-MAP.HLP: CS-MAP.RTF CS-MAP.HPJ CS-MAP.CNT
+	HCW /C /E cs-map.hpj

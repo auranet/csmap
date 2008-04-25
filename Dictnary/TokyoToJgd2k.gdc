@@ -1,0 +1,22 @@
+#
+# Each line points to a datum shift data file.  In the case of
+# overlapping coverage, the program selects the first data file
+# which appears first in this file.  This is different from other
+# GDC files due to the non rectangular natureof the Japanese
+# grid shift files.  Thus, the actual grid density value is
+# ignored.
+#
+# Also due to the nature of the Japanese grid shift file, the
+# file data is not buffered, and the buffer size argument is
+# also ignored.  Since there are no flag options (yet), the
+# flag argument is also ignored.
+#
+# If you list more than one file, be sure to list them in the
+# order you wish them to be searched.
+#
+# As it is not clear that the referenced file is in the public
+# domain, this file is not distributed and the following reference
+# is commented ou.
+#
+#.\Japan\ibaraki.par
+#

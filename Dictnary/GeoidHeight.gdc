@@ -1,0 +1,63 @@
+#
+# The first several files listed here, those
+# with the .bin extension, are Geoid99 files.
+# Usually, these are the desired files.  You can,
+# of course, comment these lines out and use the
+# Geoid96 files, which are commented out below.
+#
+# Geoid2003 is also supported, you can use these
+# files as well by replaceingthe references to
+# the Geoid 99 files with references to the
+# Geoid 2003 files.
+#
+# Note, if the file is listed here, it is expected
+# to be found, otherwise a fatal error occurs.
+#
+# Note also that the Geoid99 files are quite large.
+# Therefore, under normal circumstances, we use the
+# default buffer size, which is 3 times the size of
+# a record in the file.
+#
+.\Geoid\USA\Geoid99\g1999a01.bin
+.\Geoid\USA\Geoid99\g1999a02.bin
+.\Geoid\USA\Geoid99\g1999a03.bin
+.\Geoid\USA\Geoid99\g1999a04.bin
+.\Geoid\USA\Geoid99\g1999h01.bin
+.\Geoid\USA\Geoid99\g1999p01.bin
+.\Geoid\USA\Geoid99\g1999u01.bin
+.\Geoid\USA\Geoid99\g1999u02.bin
+.\Geoid\USA\Geoid99\g1999u03.bin
+.\Geoid\USA\Geoid99\g1999u04.bin
+.\Geoid\USA\Geoid99\g1999u05.bin
+.\Geoid\USA\Geoid99\g1999u06.bin
+.\Geoid\USA\Geoid99\g1999u07.bin
+.\Geoid\USA\Geoid99\g1999u08.bin
+#
+# Since Geoid 99 is now thw preferred source for
+# Geoid Heights, the following are commented out.
+# There really isn't much difference between the
+# the two.  But you "pays your money, and you
+# takes your choice."
+#
+#.\Geoid\USA\Geoid96\GEO96AN.GEO
+#.\Geoid\USA\Geoid96\GEO96AS.GEO
+#.\Geoid\USA\Geoid96\GEO96HW.GEO
+#.\Geoid\USA\Geoid96\GEO96NC.GEO
+#.\Geoid\USA\Geoid96\GEO96NE.GEO
+#.\Geoid\USA\Geoid96\GEO96NW.GEO
+#.\Geoid\USA\Geoid96\GEO96PR.GEO
+#.\Geoid\USA\Geoid96\GEO96SC.GEO
+#.\Geoid\USA\Geoid96\GEO96SE.GEO
+#.\Geoid\USA\Geoid96\GEO96SW.GEO
+#
+# You can also add Canadian files, but be sure to
+# include the .byn extension.
+#
+#.\Canada\Geoid\HT2_0.byn
+#
+# You can also use the gsss99.bin files, the
+# MEXICAN97.geo files, etc.  Just keep the
+# extension on the file.  Also, note that in the
+# case of geographic overlap, the file which
+# is listed first will take precedence.
+##

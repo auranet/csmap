@@ -1,0 +1,64 @@
+#
+# Each line points to a datum shift data file.  In the case of
+# overlapping coverage, the program selects the data file with
+# the smallest grid cell in the region of the conversion.  If
+# the grid cell sizes are the same, the program selects the
+# file which appears first in this file.  Check the Help
+# file for more options.
+#
+# Order the list of files as appropriate for your application.
+# You can add additional files as they become available.  While
+# the name, letter case, and location of the file name is not
+# importantant, the extension must be ".gsb" if the file is in
+# the Canadian National Transformation, Version 2 format.  Each
+# line may be a full path name.  The ".\" sequence used here is
+# a relative folder/directory reference, relative to the folder
+# (directory) in which this file resides.
+#
+# Deleteing, or commenting out, references to files that
+# you are unlikely to use may improve performance slightly.
+#
+# Note that the files can be in any directory.  The
+# ".\" prefix used here is a relative folder/directory
+# reference to the directory in which this file resides.
+#
+.\USA\HARN\alhpgn.l?s
+.\USA\HARN\azhpgn.l?s
+.\USA\HARN\cnhpgn.l?s
+.\USA\HARN\cohpgn.l?s
+.\USA\HARN\cshpgn.l?s
+.\USA\HARN\emhpgn.l?s
+.\USA\HARN\ethpgn.l?s
+.\USA\HARN\flhpgn.l?s
+.\USA\HARN\gahpgn.l?s
+.\USA\HARN\hihpgn.l?s
+.\USA\HARN\kshpgn.l?s
+.\USA\HARN\kyhpgn.l?s
+.\USA\HARN\lahpgn.l?s
+.\USA\HARN\mdhpgn.l?s
+.\USA\HARN\mehpgn.l?s
+.\USA\HARN\mihpgn.l?s
+.\USA\HARN\mshpgn.l?s
+.\USA\HARN\nbhpgn.l?s
+.\USA\HARN\ndhpgn.l?s
+.\USA\HARN\nehpgn.l?s
+.\USA\HARN\nmhpgn.l?s
+.\USA\HARN\nvhpgn.l?s
+.\USA\HARN\nyhpgn.l?s
+.\USA\HARN\ohhpgn.l?s
+.\USA\HARN\okhpgn.l?s
+.\USA\HARN\pvhpgn.l?s
+.\USA\HARN\sdhpgn.l?s
+.\USA\HARN\tnhpgn.l?s
+.\USA\HARN\uthpgn.l?s
+.\USA\HARN\vahpgn.l?s
+.\USA\HARN\wihpgn.l?s
+.\USA\HARN\wmhpgn.l?s
+.\USA\HARN\wohpgn.l?s
+.\USA\HARN\wthpgn.l?s
+.\USA\HARN\wvhpgn.l?s
+.\USA\HARN\wyhpgn.l?s
+#
+# If you add a fallback here, it will be honored.  For
+# HARN, we doubt that it would be advisable to use this
+# feature.

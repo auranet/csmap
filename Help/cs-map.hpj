@@ -1,0 +1,35 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+[OPTIONS]
+REVISIONS=No
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+CONTENTS=csHLPID_CSMAP
+TITLE=Coordinate Conversion System
+CNT=.\CS-MAP.cnt
+COPYRIGHT=Mentor Software Inc, CS-MAP, Release 10.02
+CITATION=Copyright © 1998 Mentor Software, Inc.  All Rights Reserved
+PREFIX=csHLPID_
+HLP=.\CS-MAP.hlp
+
+[FILES]
+.\CS-MAP.rtf
+
+[MAP]
+#include ..\include\cs_hlp.h
+
+[WINDOWS]
+Large="Coordinate Conversion System Information",(24,39,768,740),21428,(r14876671),(r12632256),f3
+Main="Coordinate Conversion System Information",(491,101,516,803),29652,(r14876671),(r12632256),f1
+Procedur="Coordinate Conversion System Information",(652,101,359,599),20916,(r14876671),(r12632256),f3
+
+[CONFIG-Large]
+CS()
+
+[CONFIG-Procedur]
+CW(`Main')
+
+[CONFIG]
+CS()
+
+
