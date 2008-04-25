@@ -1,0 +1,7 @@
+*.o
+Dictnary/cs_comp
+Dictnary/cs_dictdiff
+Dictnary/*.MRT
+Dictnary/Coordsys
+Dictnary/Datums
+Dictnary/Elipsoid
