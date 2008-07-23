@@ -130,7 +130,8 @@ void CSdeleteLLGridCellCache (struct csLLGridCellCache_* __This)
 	if (__This != NULL)
 	{
 		CSreleaseLLGridCellCache (__This);
-		CS_free (__This);
+		free( (struct csLLGridCellCache_*) __This);
+		//CS_free (__This);
 	}
 }
 void CSreleaseLLGridCellCache (struct csLLGridCellCache_* __This)
@@ -145,7 +146,8 @@ void CSreleaseLLGridCellCache (struct csLLGridCellCache_* __This)
 		{
 			tmpPtr = cellPtr;
 			cellPtr = cellPtr->next;
-			CS_free (tmpPtr);
+			free((struct csLLGridCell_ *) tmpPtr);		
+			//CS_free (tmpPtr);
 		}
 		__This->listHead = NULL;
 		__This->usedCount = 0;

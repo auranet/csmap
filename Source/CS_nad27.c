@@ -185,15 +185,15 @@ void EXP_LVL9 CSnadCls (void)
 	csNad27ToNad83Cnt -= 1;
 	if (csNad27ToNad83Cnt <= 0)
 	{
-		CSreleaseNad27ToNad83 (csNad27ToNad83);
-		csNad27ToNad83Cnt = 0;
+		//CSreleaseNad27ToNad83 (csNad27ToNad83);
+		//csNad27ToNad83Cnt = 0;
 
-		/**************************************************************
-		  Alternative code, commented out.
+		/**************************************************************/
+		//  Alternative code, commented out.
 		CSdeleteNad27ToNad83 (csNad27ToNad83);
 		csNad27ToNad83 = NULL;
 		csNad27ToNad83Cnt = 0;
-		**************************************************************/
+		/**************************************************************/
 	}
 	return;
 }
