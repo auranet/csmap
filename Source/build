@@ -9,6 +9,14 @@ case $ARCHITECTURE in
 		CS_LIB_SUFFIX="dylib"
 		CS_LIB_FLG="-dynamiclib -flat_namespace -undefined suppress"
 		CS_NAMES="-install_name /usr/local/lib/libcsmap.1.$CS_LIB_SUFFIX -compatibility_version 1.15 -current_version 1.15.1" ;;
+    x86_64 )
+		CS_CC_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC"
+		CS_CPP_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC -D__CPP__"
+		CS_EXE_FLG=""
+		CS_LIB_PATH="/usr/lib64"
+		CS_LIB_SUFFIX="so"
+		CS_LIB_FLG="-shared"
+		CS_NAMES="" ;;
 	* )
 		CS_CC_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC"
 		CS_CPP_FLG="-I../Include -O2 -D$ARCHITECTURE -DNDEBUG -fPIC -D__CPP__"
