@@ -4,7 +4,7 @@ case $ARCHITECTURE in
 	APPLE )
 		CS_CC_FLG="-I../Include -O2 -no-cpp-precomp -fno-common -D$ARCHITECTURE -DNDEBUG"
 		CS_CPP_FLG="-I../Include -O2 -no-cpp-precomp -fno-common -D$ARCHITECTURE -DNDEBUG -D__CPP__"
-		CS_EXE_FLG="-dynamic -L/usr/lib/gcc/i686-apple-darwin9/4.0.1"
+		CS_EXE_FLG="-dynamic -L/usr/lib/gcc/i686-apple-darwin10/4.2.1"
 		CS_LIB_PATH="/usr/local/lib"
 		CS_LIB_SUFFIX="dylib"
 		CS_LIB_FLG="-dynamiclib -flat_namespace -undefined suppress"
